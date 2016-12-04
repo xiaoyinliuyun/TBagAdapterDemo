@@ -1,0 +1,1 @@
+此Demo是自定义的一个Adapter模板,继承TBagAdapter省去每次都要重写一下固定的内容。
