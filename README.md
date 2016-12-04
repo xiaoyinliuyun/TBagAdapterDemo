@@ -7,5 +7,5 @@ git add
 git commit -m "Comments"
 git status
 git log
-
+git merge dev
 
