@@ -10,14 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.function.demo.activity.MainActivity">
 
-    <TextView
-        android:id="@+id/tvTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:id="@+id/llTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPre"
+            android:text="Pre" />
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNext"
+            android:text="Next" />
+    </LinearLayout>
+
     <ListView
         android:id="@+id/lvList"
-        android:layout_below="@id/tvTop"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTest" />
 </RelativeLayout>
