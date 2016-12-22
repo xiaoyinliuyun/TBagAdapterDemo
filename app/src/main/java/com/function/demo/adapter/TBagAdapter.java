@@ -51,7 +51,7 @@ public abstract class TBagAdapter<T, H> extends BaseAdapter {
         }
 
         T t = (T) list.get(position);
-        setValue(h,t);
+        setValue(h,t,position);
         return convertView;
     }
 
@@ -59,5 +59,5 @@ public abstract class TBagAdapter<T, H> extends BaseAdapter {
 
     public abstract H initHolder(View convertView);
 
-    public abstract void setValue(H h,T t);
+    public abstract void setValue(H h,T t,int position);
 }

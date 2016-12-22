@@ -32,7 +32,7 @@ public class FunctionAdapter extends TBagAdapter<TBagFunctionItem,FunctionAdapte
     }
 
     @Override
-    public void setValue(Holder holder, TBagFunctionItem tBagFunctionItem) {
+    public void setValue(Holder holder, TBagFunctionItem tBagFunctionItem,int position) {
         holder.tv.setText(tBagFunctionItem.getTv());
     }
 
